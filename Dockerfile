@@ -5,4 +5,6 @@ WORKDIR /usr/src/app
 
 ADD . /usr/src/app
 
+VOLUME ["/usr/src/app"]
+
 #ONBUILD RUN mvn install
