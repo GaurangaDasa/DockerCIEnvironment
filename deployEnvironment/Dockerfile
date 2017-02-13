@@ -96,6 +96,6 @@ RUN set -e \
 		exit 1; \
 	fi
 
-ADD MockitoPOC.war /usr/local/tomcat/webapps/MockitoPOC.war
+ADD target/MockitoPOC.war /usr/local/tomcat/webapps/MockitoPOC.war
 EXPOSE 8080
 CMD ["catalina.sh", "run"]
